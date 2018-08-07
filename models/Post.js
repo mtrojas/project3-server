@@ -4,7 +4,10 @@ const Schema = mongoose.Schema;
 const postSchema = new Schema({
   title: String,
   text: String,
-  image: String,
+  image: {
+    author:  String,
+    url: String,
+  },
   // comments: [{
   //   type: mongoose.Schema.Types.ObjectId,
   //   ref: 'Comment'
