@@ -35,6 +35,17 @@ router.get('/:id', (req, res, next) => {
     });
 });
 
+/* SEARCH Posts text*/
+// router.post('/search', (req, res, next) => {
+//   Post.find({ text: req.body })
+//     .then(posts => {
+//       return res.status(200).json(posts)
+//     })
+//     .catch(error => {
+//       return res.status(404).json(error)
+//     })
+// })
+
 /* EDIT a Post. */
 router.put('/:id', (req, res, next) => {
   Post.findByIdAndUpdate(req.params.id, req.body, {new: true})
