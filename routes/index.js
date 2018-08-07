@@ -7,7 +7,7 @@ const path = require('path');
 //   res.render('index');
 // });
 
-ready to deploy
+//ready to deploy
 router.get('/*', (req, res, next) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
