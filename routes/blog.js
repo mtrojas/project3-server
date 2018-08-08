@@ -37,7 +37,7 @@ router.get('/:id', (req, res, next) => {
 
 /* SEARCH Posts text*/
 // router.post('/search', (req, res, next) => {
-//   Post.find({ text: req.body })
+//   Post.find({ "text": { $regex: /req.body/i }})
 //     .then(posts => {
 //       return res.status(200).json(posts)
 //     })
