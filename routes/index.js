@@ -9,7 +9,7 @@ const path = require('path');
 
 //ready to deploy
 router.get('/*', (req, res, next) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 module.exports = router;
