@@ -65,8 +65,8 @@ const index = require('./routes/index');
 const auth = require('./routes/auth');
 const services = require('./routes/services');
 const blog = require('./routes/blog');
-app.use('/blog', blog);
-app.use('/services', services);
+app.use('/api/blog', blog);
+app.use('/api/services', services);
 app.use('/', auth);
 app.use('/', index);
 
